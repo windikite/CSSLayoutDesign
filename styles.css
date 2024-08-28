@@ -1,0 +1,131 @@
+body {
+    background-color: black;
+}
+
+p, li, h2, h3, h4 {
+    color: white;  
+}
+
+main {
+    min-height: 500px;
+}
+
+main>p {
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album_art {
+    width: 350px;
+    height: 350px;
+}
+
+.artist {
+    text-align: right;
+}
+
+.info {
+    width: 345px;
+    padding: 5px;
+}
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+h2, h3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer>section {
+    border: dashed white 1px;
+    padding: 10px;
+    width: 300px;
+}
+
+footer {
+    justify-content: space-between;
+}
+
+footer>section>p, footer>section>p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 15% repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    margin: auto;
+    margin-left: 0;
+    flex-grow: 1;
+}
+
+.card_art {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sidebar{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    width: 100%;
+}
+
+#sidebar>a, footer>section>div>a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer>section>div {
+    justify-content: space-around;
+}
+
+#sidebar>a {
+    width: 100%;
+}
+
+#sidebar>a:hover {
+    color: pink;
+}
+
+#banner {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+header>h1 {
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 10px #0000FF;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+}
